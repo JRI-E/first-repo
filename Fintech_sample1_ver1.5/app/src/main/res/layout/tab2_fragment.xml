@@ -10,10 +10,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tab2_contents" />
+
+
+            <!--
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -26,11 +25,20 @@
             android:layout_height="wrap_content"
             android:background="#507A2F"
             android:text="ここをおす" />
+          -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab2_contents"
+            android:visibility="visible" />
 
         <com.github.mikephil.charting.charts.BarChart
-            android:id="@+id/barChart"
+            android:id="@+id/combinedChart"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+
+        </com.github.mikephil.charting.charts.BarChart>
 
 
     </LinearLayout>
