@@ -55,6 +55,7 @@ public class Tab2Fragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         CombinedChart combinedChart = view.findViewById(R.id.combinedChart);
+        final String[] labels = {"","7月", "8月", "9月"};
         // 収入と支出のデータ（棒グラフ）
         BarData barData = new BarData(getBarData(view)/* your BarDataSet */);
 
@@ -91,7 +92,7 @@ public class Tab2Fragment extends Fragment {
         //X軸
         XAxis xAxis = chart.getXAxis();
         //X軸に表示するLabelのリスト(最初の""は原点の位置)
-        final String[] labels = {"","7月", "8月", "9月"};
+
 
         xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
         XAxis bottomAxis = chart.getXAxis();
